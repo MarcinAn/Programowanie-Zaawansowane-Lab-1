@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Programowanie Zaawansowane Labolatorium 1", "Programowanie Zaawansowane Labolatorium 1.csproj", "{9A1457EB-C6EA-40C2-9B08-378D06AA34BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A1457EB-C6EA-40C2-9B08-378D06AA34BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A1457EB-C6EA-40C2-9B08-378D06AA34BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A1457EB-C6EA-40C2-9B08-378D06AA34BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A1457EB-C6EA-40C2-9B08-378D06AA34BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B298702E-6F14-4DD8-B469-03CB29608DC6}
+	EndGlobalSection
+EndGlobal

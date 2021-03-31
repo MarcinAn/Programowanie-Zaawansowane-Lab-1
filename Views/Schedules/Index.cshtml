@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Programowanie_Zaawansowane_Labolatorium_1.Models.Schedule>
+
+@{
+    ViewData["Title"] = "Zajęcia";
+}
+
+<div class="text-center">
+    <h1 class="display-4" , style="background-color:cornflowerblue; padding-top:10px; padding-bottom:15px">Zajęcia</h1>
+</div>
+
+<h5><a asp-action="Create">Dodaj</a></h5>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Subject)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lecturer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartSubjectDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndSubjectDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Type)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Subject)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lecturer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartSubjectDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndSubjectDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edycja</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Szczegóły</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Usuń</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
