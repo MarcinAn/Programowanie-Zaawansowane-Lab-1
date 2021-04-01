@@ -8,7 +8,8 @@
     <h1 class="display-4" , style="background-color:cornflowerblue; padding-top:10px; padding-bottom:15px">Zajęcia</h1>
 </div>
 
-<h3>Czy napewno chcesz usunąć?</h3>
+<h4 style="margin-top:26px; margin-bottom:26px">Czy napewno chcesz usunąć?</h4>
+
 <div>
     <hr />
     <dl class="row">
@@ -46,7 +47,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Usuń" class="btn btn-danger" /> |
-        <a asp-action="Index">Wróć do listy</a>
+        <input type="submit" value="Usuń" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-primary"> Wróć do listy</a>
     </form>
 </div>
