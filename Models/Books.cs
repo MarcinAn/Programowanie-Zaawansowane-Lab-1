@@ -33,8 +33,8 @@ namespace Programowanie_Zaawansowane_Labolatorium_1.Models
         public DateTime ReturnDate { get; set; }
 
         [Display(Name = "Egzemplarze")]
-        [Range(minimum: 1, maximum: 5, ErrorMessage = "Można wypożyczyć maksymalnie 5 egzemplarzy.")]
         [Required(ErrorMessage = "Należy wprowadzić ilość egzemplarzy (maksymalnie 5).")]
+        [Range(minimum: 1, maximum: 5, ErrorMessage = "Można wypożyczyć maksymalnie 5 egzemplarzy.")]
         public int BooksAmount { get; set; }
     }
 }

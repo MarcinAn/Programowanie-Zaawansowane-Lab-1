@@ -8,6 +8,8 @@
     <h1 class="display-4" , style="background-color:cornflowerblue; padding-top:10px; padding-bottom:15px">Książki</h1>
 </div>
 
+<h5>Szczegóły</h5>
+
 <div>
     <hr />
     <dl class="row">
@@ -50,6 +52,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edycja</a> |
-    <a asp-action="Index">Wróć do listy</a>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edycja</a>
+    <a asp-action="Index" class="btn btn-primary">Wróć do listy</a>
 </div>
