@@ -1,14 +1,15 @@
 ﻿@model IEnumerable<Programowanie_Zaawansowane_Labolatorium_1.Models.Schedule>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Zajęcia";
 }
 
-<h1>Index</h1>
+<div class="text-center">
+    <h1 class="display-4" , style="background-color:cornflowerblue; padding-top:10px; padding-bottom:15px">Zajęcia</h1>
+</div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<h5><a asp-action="Create">Dodaj</a></h5>
+
 <table class="table">
     <thead>
         <tr>
@@ -49,9 +50,9 @@
                 @Html.DisplayFor(modelItem => item.Type)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edycja</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Szczegóły</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Usuń</a>
             </td>
         </tr>
 }
