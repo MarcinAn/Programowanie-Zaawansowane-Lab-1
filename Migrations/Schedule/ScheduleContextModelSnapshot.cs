@@ -30,16 +30,18 @@ namespace Programowanie_Zaawansowane_Labolatorium_1.Migrations.Schedule
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Lecturer")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("StartSubjectDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Subject")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Type")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Type")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

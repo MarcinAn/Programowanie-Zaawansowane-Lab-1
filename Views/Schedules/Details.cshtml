@@ -1,14 +1,13 @@
 ﻿@model Programowanie_Zaawansowane_Labolatorium_1.Models.Schedule
 
 @{
-    ViewData["Title"] = "Szczegóły";
+    ViewData["Title"] = "Details";
 }
 
-<div class="text-center">
-    <h1 class="display-4" , style="background-color:cornflowerblue; padding-top:10px; padding-bottom:15px">Zajęcia</h1>
-</div>
+<h1>Details</h1>
 
 <div>
+    <h4>Schedule</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -44,6 +43,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edycja</a> |
-    <a asp-action="Index">Wróć do listy</a>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
 </div>

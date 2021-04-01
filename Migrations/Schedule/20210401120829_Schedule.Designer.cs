@@ -10,7 +10,7 @@ using Programowanie_Zaawansowane_Labolatorium_1.Data;
 namespace Programowanie_Zaawansowane_Labolatorium_1.Migrations.Schedule
 {
     [DbContext(typeof(ScheduleContext))]
-    [Migration("20210331180707_Schedule")]
+    [Migration("20210401120829_Schedule")]
     partial class Schedule
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,16 +32,18 @@ namespace Programowanie_Zaawansowane_Labolatorium_1.Migrations.Schedule
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Lecturer")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("StartSubjectDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Subject")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Type")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Type")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

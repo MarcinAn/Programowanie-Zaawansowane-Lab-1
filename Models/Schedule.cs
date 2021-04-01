@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 
@@ -27,8 +28,17 @@ namespace Programowanie_Zaawansowane_Labolatorium_1.Models
         public DateTime EndSubjectDate { get; set; }
 
         [Display(Name = "Rodzaj zajęć")]
-        [Required(ErrorMessage = "Proszę wprowadzić rodzaj zajęć.")]
-        [RegularExpression(@"(Labolatorium)")]
-        public string Type { get; set; }
+        [Required(ErrorMessage = "Proszę wybrać rodzaj zajęć.")]
+        [EnumDataType(typeof(Types))]
+        public Types Type { get; set; }
+
     }
+    public enum Types
+    {
+        Wykład=0,
+        Labolatorium=1,
+        Ćwiczenia=2,
+        Konseratorium=3
+    }
+
 }

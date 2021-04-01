@@ -13,11 +13,11 @@ namespace Programowanie_Zaawansowane_Labolatorium_1.Migrations.Schedule
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Subject = table.Column<string>(nullable: true),
-                    Lecturer = table.Column<string>(nullable: true),
+                    Subject = table.Column<string>(nullable: false),
+                    Lecturer = table.Column<string>(nullable: false),
                     StartSubjectDate = table.Column<DateTime>(nullable: false),
                     EndSubjectDate = table.Column<DateTime>(nullable: false),
-                    Type = table.Column<string>(nullable: true)
+                    Type = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
