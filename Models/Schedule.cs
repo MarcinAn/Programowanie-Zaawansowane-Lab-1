@@ -36,7 +36,7 @@ namespace Programowanie_Zaawansowane_Labolatorium_1.Models
     public enum Types
     {
         Wykład=0,
-        Labolatorium=1,
+        Laboratorium=1,
         Ćwiczenia=2,
         Konseratorium=3
     }
