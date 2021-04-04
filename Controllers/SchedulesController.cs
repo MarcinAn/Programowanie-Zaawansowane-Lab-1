@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Programowanie_Zaawansowane_Labolatorium_1.Data;
-using Programowanie_Zaawansowane_Labolatorium_1.Models;
+using Programowanie_Zaawansowane_Laboratorium_1.Data;
+using Programowanie_Zaawansowane_Laboratorium_1.Models;
 
-namespace Programowanie_Zaawansowane_Labolatorium_1.Controllers
+namespace Programowanie_Zaawansowane_Laboratorium_1.Controllers
 {
     public class SchedulesController : Controller
     {

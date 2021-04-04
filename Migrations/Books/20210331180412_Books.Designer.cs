@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Programowanie_Zaawansowane_Labolatorium_1.Data;
+using Programowanie_Zaawansowane_Laboratorium_1.Data;
 
-namespace Programowanie_Zaawansowane_Labolatorium_1.Migrations
+namespace Programowanie_Zaawansowane_Laboratorium_1.Migrations
 {
     [DbContext(typeof(BooksContext))]
     [Migration("20210331180412_Books")]
@@ -21,7 +21,7 @@ namespace Programowanie_Zaawansowane_Labolatorium_1.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Programowanie_Zaawansowane_Labolatorium_1.Models.Books", b =>
+            modelBuilder.Entity("Programowanie_Zaawansowane_Laboratorium_1.Models.Books", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

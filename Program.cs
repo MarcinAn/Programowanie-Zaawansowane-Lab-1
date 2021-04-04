@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Programowanie_Zaawansowane_Labolatorium_1
+namespace Programowanie_Zaawansowane_Laboratorium_1
 {
     public class Program
     {

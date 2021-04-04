@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Programowanie_Zaawansowane_Labolatorium_1.Data;
+using Programowanie_Zaawansowane_Laboratorium_1.Data;
 
-namespace Programowanie_Zaawansowane_Labolatorium_1.Migrations.Schedule
+namespace Programowanie_Zaawansowane_Laboratorium_1.Migrations.Schedule
 {
     [DbContext(typeof(ScheduleContext))]
     [Migration("20210401120829_Schedule")]
@@ -21,7 +21,7 @@ namespace Programowanie_Zaawansowane_Labolatorium_1.Migrations.Schedule
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Programowanie_Zaawansowane_Labolatorium_1.Models.Schedule", b =>
+            modelBuilder.Entity("Programowanie_Zaawansowane_Laboratorium_1.Models.Schedule", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

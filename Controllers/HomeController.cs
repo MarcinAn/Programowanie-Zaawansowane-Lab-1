@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Programowanie_Zaawansowane_Labolatorium_1.Models;
+using Programowanie_Zaawansowane_Laboratorium_1.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Programowanie_Zaawansowane_Labolatorium_1.Controllers
+namespace Programowanie_Zaawansowane_Laboratorium_1.Controllers
 {
     public class HomeController : Controller
     {

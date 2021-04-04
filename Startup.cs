@@ -8,11 +8,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Programowanie_Zaawansowane_Labolatorium_1.Data;
+using Programowanie_Zaawansowane_Laboratorium_1.Data;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Programowanie_Zaawansowane_Labolatorium_1
+namespace Programowanie_Zaawansowane_Laboratorium_1
 {
     public class Startup
     {

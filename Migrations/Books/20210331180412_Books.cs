@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Programowanie_Zaawansowane_Labolatorium_1.Migrations
+namespace Programowanie_Zaawansowane_Laboratorium_1.Migrations
 {
     public partial class Books : Migration
     {

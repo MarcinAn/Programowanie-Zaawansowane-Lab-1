@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 
 
-namespace Programowanie_Zaawansowane_Labolatorium_1.Models
+namespace Programowanie_Zaawansowane_Laboratorium_1.Models
 {
     public class Books
     {
